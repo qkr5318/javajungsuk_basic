@@ -1,15 +1,26 @@
-
+import java.util.Date;
 
 public class VarEx2 {
 
-		/**
-		 * @param args
-		 */
 		public static void main(String[] args) {
-		final int score = 100;
-//		score = 200;
-		
-		System.out.println(score);
-		
+			
+			int x = 10, y = 20;
+			int tmp;
+			
+			tmp = x;
+			x = y;
+			y = tmp;
+			
+			System.out.println("x = " + x);
+			System.out.println("y = " + y);
+			System.out.println("tmp = " + tmp);
+			
+			Date today = new Date();
+			System.out.println(today.getDay());
+			System.out.println(today.getHours());
+			System.out.println(today.getMinutes());
+			System.out.println(today.getSeconds());
+			System.out.println(today.getYear());
+			System.out.println(today.getDate());
 	}
 }
